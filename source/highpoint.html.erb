@@ -19,63 +19,47 @@ title: Highpoint activation
   </section>
 
   <section class="wrapper--image">
-    <img class="image--half-width" src="/images/highpoint-hero.jpg" alt="">
-    <img class="image--half-width" src="/images/highpoint-hero-2.jpg" alt="">
+    <img src="/images/highpoint-hero.jpg" alt="">
   </section>
 
   <section class="wrapper">
-    <h2>That’s a whole lot of images!</h2>
+    <h2>Choose your style</h2>
+
     <p>
-      Little Creatures always had fantastic product material and we knew this website was gonna be pretty heavy when it comes to image load. Having previously worked with the turbolinks gem for Rails we decided that we could use it’s great caching option to reduce load times, especially for already visited pages. 
+      Through a responsive website users could select a combination from 5 different types of clothing, from top to bottom. When all 5 were selected users were shown a result, where their 'flatlay' would be matched with a current trend based on what items they picked. 
+    </p>
+    <p>
+      Once submitted the user would get the possible message that they've won a prize but also that their 'flatlay' was send to a queue to be displayed on the big screen in the shopping mall. We created a small API where the big screen would continuesly ping the API for new flatlays to add to the queue. If the queue would be empty it would get a set of old entries.
+    </p>
+  </section>
+
+  <section class="wrapper--image">
+    <img src="/images/highpoint-hero-2.jpg" alt="">
+  </section>
+
+  <section class="wrapper">
+    <h2>Animating on a 4k resolution</h2>
+    <p>
+      We knew our biggest challenge in this case would be running animations on a "web page" on a 4k resolution screen. Sure, there a better ways to solve this, but with learnings from earlier projects we knew this was possible. In total 8 different animations were developed that matched every fashion trend for that year. 
+    </p>
+    <p>
+      All animations were tested multiple times and finetuned where needed. The majority of the animations were built upon the <a href="http://velocityjs.org/">velocity.js framework</a>, but in 2 cases a simple CSS animation was chosen.
     </p>
 
-    <video class="instruction-video" autoplay loop>
-      <source src="/images/little-creatures-animation.mp4"
+    <p>
+      After showing 10 entries the screen would show the most popular clothing items per trend.
+    </p>
+
+    <video class="instruction-video" autoplay loop muted>
+      <source src="/images/highpoint-animation.mp4"
             type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
     </video>
-
-    <p>
-      Since we now had control over the various states of page loading we could clearly separate new pages and cached pages by using different animation to that page.
-    </p>
-  </section>
-
-  <blockquote>
-    <div class="wrapper--blockquote">
-      <p>
-        Get the performance benefits of a single-page application without the added complexity of a client-side JavaScript framework. Use HTML to render your views on the server side and link to pages as usual. When you follow a link, Turbolinks automatically fetches the page, swaps in its &#60;body&#62;, and merges its &#60;head&#62;, all without incurring the cost of a full page load.
-      </p>
-      <footer>
-        According to their <a href="https://github.com/turbolinks/turbolinks">GitHub page</a>
-      </footer>
-    </div>
-  </blockquote>
-
-  <section class="wrapper">
-    <h2>Print focused style guide</h2>
-    <p>
-      Prior to the development of the new website, Little Creatures updated their brand style guide to be more on brand. The style guide seemed to be heavily focused for print, with a lot of different styles in their typography. It seemed to be that one font was used, with different textures and a heavy font shadow. 
-    </p>
-
-    <img class="image--full-width" src="/images/little-creatures-font.jpg" alt="font variations of little creatures examples">
-
-    <p>
-      Using all these variations of one font would’ve really impacted load speeds, so we decided to try and replicate it using one font with CSS font shadow. This really did the trick!  
-    </p>
   </section>
 
   <section class="wrapper">
-    <h2>That’s a whole lot of images!</h2>
+    <h2>The results</h2>
     <p>
-      Little Creatures always had fantastic product material and we knew this website was gonna be pretty heavy when it comes to image load. Having previously worked with the turbolinks gem for Rails we decided that we could use it’s great caching option to reduce load times, especially for already visited pages. 
-    </p>
-
-    <video class="instruction-video" autoplay loop>
-      <source src="/images/little-creatures-contact.mp4"
-            type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
-    </video>
-
-    <p>
-      Since we now had control over the various states of page loading we could clearly separate new pages and cached pages by using different animation to that page.
+      Unlock Your Style was a huge success amassing over 25,000 entries in the two week period and smashing our target by over 150%. On just day two of the campaign entries were already coming already in fast, with over 3,500 entries over the course of the day. Our activity on Facebook and other platforms helped sustain momentum and kept entries consistent throughout the duration of the competition. Users spent on average of almost 10 minutes engaging with the different options within the app.
     </p>
   </section>
 

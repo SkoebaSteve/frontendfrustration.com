@@ -37,26 +37,43 @@ pre {
 ==================================*/
 
 body {
-  color: #566b78;
-  font-family: "Helvetica", "Arial", sans-serif;
+  color: #666;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.5;
 }
 
-h1, h2 {
+h1, h2, h3{
+  line-height: 1.2;
   margin-top: 1em;
   padding-top: 1em;
-}
-
-h1,
-h2,
-strong {
-  color: #333;
-  font-weight: 500;
+  font-weight:300;
 }
 
 a {
   color: #e81c4f;
 }
+
+.heading--recent-work{
+  font-size:1.7em;
+  text-align:center;
+}
+
+.recent-work__heading, .recent-work__content{
+  color:#FFF;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.recent-work__heading{
+  text-shadow: 1px 2px 3px #666;
+}
+
+.recent-work__content{
+  font-size:0.7em;
+  text-shadow: 1px 2px 3px #666;
+  text-transform:uppercase;
+}
+
 
 /*=====  End of Typography  ======*/
 
@@ -93,6 +110,84 @@ blockquote footer{
   width:49%;
 }
 
+.introduction {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom:10vh;
+}
+
+.profile-photo{
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #bbb;
+  display: inline-block;
+  margin-bottom:-2em;
+}
+
+.recent-work__link{
+  position:relative;
+}
+
+.recent-work__link{
+  background:#000;
+}
+
+.other-work__link{
+  align-items:center;
+  display:flex;
+  justify-content:center;
+  min-height:300px;
+  text-decoration:none;
+}
+
+.recent-work__content, .recent-work__heading{
+  transition:all 0.5s ease;
+}
+
+.recent-work__image{
+  position:relative;
+  width:100%;
+}
+
+.recent-work__image img{
+  width:100%;
+}
+
+.recent-work__description{
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.recent-work__content{
+  background-color:rgba(0,0,0,0.3);
+  display:block;
+  padding:1em;
+}
+
+.recent-work__skills{
+  padding:0;
+}
+
+.recent-work__skills li{
+  display:inline-block;
+  list-style-type:none;
+}
+
+.recent-work__skills li:after{
+  content:" -";
+}
+
+.recent-work__skills li:nth-last-of-type(1):after{
+  content:"";
+}
+
 /*=====  End of Layout styling  ======*/
 
 
@@ -104,6 +199,51 @@ blockquote footer{
   .wrapper, .wrapper--blockquote, .wrapper--image{
     max-width:600px;
     margin:auto;
+  }
+
+  .recent-work__wrapper{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .recent-work__link{
+    display:block;
+    width:calc(100% / 2);
+  }
+
+  .other-work__link{
+    width:calc(100% / 2);
+  }
+
+  .recent-work__link:hover .recent-work__image img{
+    opacity:0.8;
+  }
+
+  .recent-work__link:hover .recent-work__content{
+    transform:translateY(-12em);
+  }
+
+  .recent-work__link:hover .recent-work__heading{
+    transform:translateY(-4em);
+  }
+
+  .recent-work__description{
+    justify-content:center;
+  }
+
+  .recent-work__content{
+    background-color:transparent;
+    bottom:-10em;
+    padding:1em;
+    position:absolute;
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+  .recent-work__link, .other-work__link{
+    width:calc(100% / 3);
   }
 }
 
