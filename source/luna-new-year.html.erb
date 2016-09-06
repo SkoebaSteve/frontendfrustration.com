@@ -26,7 +26,7 @@ title: Lunar new year game
     <h2>SVG animation to the rescue</h2>
 
     <p>
-      Having previously done a lot of manipulating of svg's I've realized that for this animation we should stick with implementing simple animations
+      Having previously done a lot of manipulating of svg's I've realized that for this animation we should stick with implementing simple animations on more 'complex' svg drawings. The benefit of using the whole drawing as an svg is that it is automatically responsive.
     </p>
 
 
@@ -40,6 +40,14 @@ title: Lunar new year game
   <section class="wrapper">
    <h2>How a simple game can get pretty complex</h2>
 
+   <p>
+     The complete animation is done with the GSAP library and consists out of multiple generated timelines and a random placement of the fortune cookie under one of the cups. Using GSAP's curve path animation the cups always move along the same curved lines left or right.
+   </p>
+
+   <p>
+     The animation consists of 3 rounds, each round speeding up the movement of the shuffling motion.
+   </p>
+
     <video class="instruction-video" autoplay loop>
       <source src="/images/luna-2.mp4"
             type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
@@ -48,7 +56,9 @@ title: Lunar new year game
 
   <section class="wrapper">
     <h2>Find a venue</h2>
-   
+    <p>
+      After playing the game users could find the nearest venue based on their location or by postcode, suburb.
+    </p>
   </section>
 
   <section class="wrapper--image">
