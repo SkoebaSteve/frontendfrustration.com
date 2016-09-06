@@ -58,10 +58,15 @@ a {
   text-align:center;
 }
 
-.recent-work__heading, .recent-work__content{
+.recent-work__heading, .recent-work__content, .other-work__heading{
   color:#FFF;
   letter-spacing:1px;
   text-transform:uppercase;
+}
+
+.other-work__heading{
+  color:#666;
+  text-align:center;
 }
 
 .recent-work__heading{
@@ -123,6 +128,10 @@ blockquote footer{
   margin-bottom:-2em;
 }
 
+.recent-work, .other-work{
+  background-color:#eaeaea;
+}
+
 .recent-work__link, .other-work__link{
   border-radius:5px;
   margin-bottom:1%;
@@ -136,7 +145,7 @@ blockquote footer{
 
 .other-work__link{
   align-items:center;
-  border:2px solid #666;
+  background-color:#FFF;
   display:flex;
   justify-content:center;
   min-height:300px;
