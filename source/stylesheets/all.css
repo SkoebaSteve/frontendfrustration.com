@@ -61,22 +61,22 @@ a {
 .recent-work__heading, .recent-work__content, .other-work__heading{
   color:#FFF;
   letter-spacing:1px;
-  text-transform:uppercase;
 }
 
 .other-work__heading{
   color:#666;
   text-align:center;
+  text-transform:uppercase;
 }
 
 .recent-work__heading{
   text-shadow: 1px 2px 3px #666;
+  text-transform:uppercase;
 }
 
 .recent-work__content{
   font-size:0.7em;
   text-shadow: 1px 2px 3px #666;
-  text-transform:uppercase;
 }
 
 
